@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="05/18/26||00:30:33" using="Simscape Multibody Link Version 7.4" from="SolidWorks 30.1.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="SupernovaArm" uid="SupernovaArm" version="154">
+<AssemblyFile name="SupernovaArm.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="BaseAssemblyforSimulink-1" uid="BaseAssemblyforSimulink-1" grounded="true" entityUid="BaseAssemblyforSimulink*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Specular r="0.39019607843137255" g="0.10980392156862745" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Joint1forSimulink-1" uid="Joint1forSimulink-1" entityUid="Joint1forSimulink*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 -8.0716882587846157e-16 0.077999999999999958</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Specular r="0.39019607843137255" g="0.10980392156862745" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Link2forSimulink-1" uid="Link2forSimulink-1" entityUid="Link2forSimulink*:*Default">
+<Transform>
+<Rotation>1 -1.6653345369377348e-16 -1.3791050120411819e-16 -1.3791050120411824e-16 0 -0.99999999999999978 1.6653345369377348e-16 1 0</Rotation>
+<Translation>0.14000000000000004 -0.0067500000000011197 0.12329999999999992</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Specular r="0.39019607843137255" g="0.10980392156862745" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Link1forSimulink-1" uid="Link1forSimulink-1" entityUid="Link1forSimulink*:*Default">
+<Transform>
+<Rotation>0.99999999999999989 0 0 0 0 -1 0 0.99999999999999989 0</Rotation>
+<Translation>0 -0.021750000000001095 0.12329999999999994</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Specular r="0.39019607843137255" g="0.10980392156862745" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="GripperforSimulink-1" uid="GripperforSimulink-1" entityUid="GripperforSimulink*:*Default">
+<Transform>
+<Rotation>0.99999999999999989 1.2836953722228372e-16 0 0 0 -0.99999999999999978 -1.2836953722228372e-16 0.99999999999999989 0</Rotation>
+<Translation>0.27000000000000007 -0.021750000000001116 0.12329999999999991</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.2196078431372549" b="1" a="1"/>
+<Specular r="0.39019607843137255" g="0.10980392156862745" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>BaseAssemblyforSimulink-1</Uid>
+</InstancePath>
+<Position>0 0 0.077999999999999958</Position>
+<Axis>1.8712052140916203e-15 1.1780207301287741e-15 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Joint1forSimulink-1</Uid>
+</InstancePath>
+<Position>0 9.055256544598933e-16 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BaseAssemblyforSimulink-1</Uid>
+</InstancePath>
+<Position>0 0 0.077999999999999958</Position>
+<Axis>-1.8712052140916203e-15 -1.1780207301287741e-15 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Joint1forSimulink-1</Uid>
+</InstancePath>
+<Position>0 9.055256544598933e-16 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Joint1forSimulink-1</Uid>
+</InstancePath>
+<Position>-1.5355301206923138e-16 0.071983147770825068 0.045299999999999979</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Link1forSimulink-1</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Joint1forSimulink-1</Uid>
+</InstancePath>
+<Position>-1.6127656393520596e-16 -0.0217500000000003 0.045299999999999979</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Link1forSimulink-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Link1forSimulink-1</Uid>
+</InstancePath>
+<Position>0.13999999999999999 0 -0.014999999999999996</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Link2forSimulink-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Link1forSimulink-1</Uid>
+</InstancePath>
+<Position>0.13999999999999999 0 -0.014999999999999996</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Link2forSimulink-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Link2forSimulink-1</Uid>
+</InstancePath>
+<Position>0.12999999999999995 0 0.014999999999999975</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>GripperforSimulink-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Link2forSimulink-1</Uid>
+</InstancePath>
+<Position>0.12999999999999995 0 -0.020000000000000007</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>GripperforSimulink-1</Uid>
+</InstancePath>
+<Position>0 0 0.019999999999999997</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="BaseAssemblyforSimulink" uid="BaseAssemblyforSimulink*:*Default" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BaseAssemblyforSimulink.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.53090441438863889</Mass>
+<CenterOfMass>0.0057296523026334157 0.00058640093671428366 0.038548513014637895</CenterOfMass>
+<Inertia>0.0013984867936425811 0.0012446296300443983 0.0019096625137888796 3.5772434808376473e-07 3.3574796573749203e-05 -1.019741138173014e-05</Inertia>
+</MassProperties>
+<GeometryFile name="BaseAssemblyforSimulink_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="GripperforSimulink" uid="GripperforSimulink*:*Default" version="878">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="GripperforSimulink.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.17712583440938887</Mass>
+<CenterOfMass>0.051014559729028075 0.0041413053642083697 -0.013018318997860608</CenterOfMass>
+<Inertia>0.00018874143845010497 0.00035632474545671604 0.00029500052193579722 6.5911175118471752e-06 6.2695226291195589e-05 1.0125144450604714e-05</Inertia>
+</MassProperties>
+<GeometryFile name="GripperforSimulink_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Joint1forSimulink" uid="Joint1forSimulink*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Joint1forSimulink.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.21320687323072848</Mass>
+<CenterOfMass>0.0016957526916937004 0.007236896413549806 0.020059704963340728</CenterOfMass>
+<Inertia>0.00025010433345908903 0.00023418827466948646 0.00031593940504251575 -2.4480278467553991e-05 4.5538183572799612e-06 1.1557880321406793e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Joint1forSimulink_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Link1forSimulink" uid="Link1forSimulink*:*Default" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Link1forSimulink.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.144683548420382</Mass>
+<CenterOfMass>0.069837221223932683 5.0978975816300547e-12 0.011726377950772854</CenterOfMass>
+<Inertia>4.4584944707964524e-05 0.00051159466845271916 0.00050736002772791317 5.083674956542391e-15 -2.9102097082795996e-05 -6.5933489825596352e-14</Inertia>
+</MassProperties>
+<GeometryFile name="Link1forSimulink_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Link2forSimulink" uid="Link2forSimulink*:*Default" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Link2forSimulink.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.13868354842038202</Mass>
+<CenterOfMass>0.064838592811566675 -5.3184626625800562e-12 -0.011801067903709744</CenterOfMass>
+<Inertia>4.3916288764463693e-05 0.00044019637655053474 0.00043573039176922958 5.1387585788296895e-15 2.6693090680785628e-05 6.2244616358735087e-14</Inertia>
+</MassProperties>
+<GeometryFile name="Link2forSimulink_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
