@@ -1,7 +1,7 @@
 % Forward KInematics, Analytical Method
 %% 1. User Input
 % Input Joint Angles [theta1, theta2, theta3, theta4]
-theta = [0, pi/3, -pi/3, 0]; 
+theta = [pi/4, 20.19*pi/180, 61.66*pi/180, -81.84*pi/180]; 
 
 %% 2. Robot Parameters
 base_dz = 78;   % fixed base offset in Z (mm)
@@ -20,7 +20,7 @@ T = T * DHtransform(dh(3,1), dh(3,2), dh(3,3), theta(3));
 T = T * DHtransform(dh(4,1), dh(4,2), dh(4,3), theta(4));
 % Extract and Display Results
 P = T(1:3, 4)'; % End-effector position [X, Y, Z]
-fprintf('Joint Angles (radians): [%.2f, %.2f, %.2f, %.2f]\n', theta_deg);
+fprintf('Joint Angles (radians): [%.2f, %.2f, %.2f, %.2f]\n', theta);
 fprintf('End-Effector Position [X, Y, Z] (mm): [%.2f, %.2f, %.2f]\n\n', P);
 disp('Final Transformation Matrix (T):');
 disp(T);
